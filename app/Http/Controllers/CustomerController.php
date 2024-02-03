@@ -12,8 +12,10 @@ class CustomerController extends Controller
 
     public function create(Request $request) 
     { 
-         echo "Firstname= " . $request->firstname;
-         echo "<br>Surname= " . $request->surname;
+		$customer = new Customer(); //creates a new instance of the customer object
+		$customer->setFirstname($request->firstname);//sets the attributes
+		$customer->setSurname($request->surname);//sets the attributes
+		$customer->save();//persists the Customer object to the database
     } 
 } 
 ?> 

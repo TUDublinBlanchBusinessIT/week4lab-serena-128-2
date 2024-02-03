@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ffa4371d71a6600808fafdf8d8186c5",
+    "content-hash": "3c8bd44662aa69b0db8ff4d9c4f63d0e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -897,6 +897,60 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "eoinok/basic-template",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eoinok/basic-template.git",
+                "reference": "23cb95e9db55d32ecb4e31d4c2aefa3651dd01eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eoinok/basic-template/zipball/23cb95e9db55d32ecb4e31d4c2aefa3651dd01eb",
+                "reference": "23cb95e9db55d32ecb4e31d4c2aefa3651dd01eb",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "\\eoinok\\basictemplate\\BasicTemplateServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "eoinok\\basictemplate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eoin O'Kennedy",
+                    "email": "eokenned@gmail.com"
+                }
+            ],
+            "description": "a basic scaffold template designed to work with Infyom Laravel Generator.",
+            "keywords": [
+                "bootstrap",
+                "bootstrap5",
+                "generator",
+                "infyom",
+                "laravel",
+                "scaffold",
+                "templates"
+            ],
+            "support": {
+                "issues": "https://github.com/eoinok/basic-template/issues",
+                "source": "https://github.com/eoinok/basic-template/tree/main"
+            },
+            "time": "2024-02-02T16:43:35+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -1998,16 +2052,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.4.1",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "3669d6d5f7a47a93c08ddff335e6d945481a1dd5"
+                "reference": "91c24291965bd6d7c46c46a12ba7492f83b1cadf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/3669d6d5f7a47a93c08ddff335e6d945481a1dd5",
-                "reference": "3669d6d5f7a47a93c08ddff335e6d945481a1dd5",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/91c24291965bd6d7c46c46a12ba7492f83b1cadf",
+                "reference": "91c24291965bd6d7c46c46a12ba7492f83b1cadf",
                 "shasum": ""
             },
             "require": {
@@ -2020,7 +2074,7 @@
             },
             "require-dev": {
                 "cebe/markdown": "^1.0",
-                "commonmark/cmark": "0.30.0",
+                "commonmark/cmark": "0.30.3",
                 "commonmark/commonmark.js": "0.30.0",
                 "composer/package-versions-deprecated": "^1.8",
                 "embed/embed": "^4.4",
@@ -2030,10 +2084,10 @@
                 "michelf/php-markdown": "^1.4 || ^2.0",
                 "nyholm/psr7": "^1.5",
                 "phpstan/phpstan": "^1.8.2",
-                "phpunit/phpunit": "^9.5.21",
+                "phpunit/phpunit": "^9.5.21 || ^10.5.9 || ^11.0.0",
                 "scrutinizer/ocular": "^1.8.1",
-                "symfony/finder": "^5.3 | ^6.0",
-                "symfony/yaml": "^2.3 | ^3.0 | ^4.0 | ^5.0 | ^6.0",
+                "symfony/finder": "^5.3 | ^6.0 || ^7.0",
+                "symfony/yaml": "^2.3 | ^3.0 | ^4.0 | ^5.0 | ^6.0 || ^7.0",
                 "unleashedtech/php-coding-standard": "^3.1.1",
                 "vimeo/psalm": "^4.24.0 || ^5.0.0"
             },
@@ -2100,7 +2154,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-30T16:55:00+00:00"
+            "time": "2024-02-02T11:59:32+00:00"
         },
         {
             "name": "league/config",
@@ -8425,7 +8479,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "eoinok/basic-template": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
